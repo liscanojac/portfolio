@@ -255,7 +255,11 @@
                         Tienes algun proyecto o pregunta? No dudes en ponerte en contacto conmigo.
                     </p>
                     <p class="coding-font">&lt;/p&gt;</p>
-                    <form id="form" class="ms-2">
+                    <form id="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="ms-2">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                        </p>
                         <p class="coding-font">&lt;form&gt;</p>
                         <div class="row my-3">
                             <div class="col">
