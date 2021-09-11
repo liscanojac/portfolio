@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- BS5 - Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- BS5 - CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <title>Juan Canelon</title>
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="mx-2">
+                <div class="d-flex justify-content-between">
+                    <h5 class="my-2">.juan<span>()</span></h5>
+                    <div class="my-auto">
+                        <ul class="list-unstyled my-auto d-lg-flex d-none">
+                            <li class="mx-2">
+                                <a href="#portfolio" class="text-decoration-none">.portafolio<span>()</span></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#about" class="text-decoration-none">.acercaDe<span>()</span></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#contact" class="text-decoration-none">.contacto<span>()</span></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="https://www.linkedin.com/in/juan-antonio-canelon-liscano-1b3a49218/" target="_blank" rel="noopener noreferrer" class="my-auto">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="https://github.com/liscanojac" target="_blank" rel="noopener noreferrer" class="my-auto">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="https://twitter.com/liscanojac" target="_blank" rel="noopener noreferrer" class="my-auto">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="nav-buttons" class="d-lg-none my-auto">
+                            <i id="menu-icon" class="bi bi-three-dots-vertical"></i>
+                            <i id="close-icon" class="bi bi-x d-none"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-list" class="row d-none">
+                    <ul class="list-unstyled d-flex flex-column align-items-end">
+                        <li class="my-1">
+                            <a href="#portfolio" class="text-decoration-none">.portafolio<span>()</span></a>
+                        </li>
+                        <li class="my-1">
+                            <a href="#about" class="text-decoration-none">.acercaDe<span>()</span></a>
+                        </li>
+                        <li class="my-1">
+                            <a href="#contact" class="text-decoration-none">.contacto<span>()</span></a>
+                        </li>                        
+                    </ul>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://www.linkedin.com/in/juan-antonio-canelon-liscano-1b3a49218/" target="_blank" rel="noopener noreferrer" class="mx-2">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/liscanojac" target="_blank" rel="noopener noreferrer" class="mx-2">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://twitter.com/liscanojac" target="_blank" rel="noopener noreferrer" class="mx-2">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <p class="coding-font">&lt;html&gt;</p>
+    <p class="coding-font ms-4">&lt;body&gt;</p>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div data-aos="fade-in" class="container">
+            <p class="coding-font">&lt;h1&gt;</p>
+            <div class="ms-2">
+                <h1>Hola,</h1>
+                <h1>Soy <span id="neon-hero" class="neon-hero neon-hero-flicker ms-2 ms-md-3">Juan Canelon,</span></h1>
+                <h1>web developer</h1>
+            </div>
+            <p class="coding-font">&lt;/h1&gt;</p>
+            <p class="coding-font">&lt;p&gt;</p>
+            <h4 class="ms-3">Front End Developer</h4>
+            <p class="coding-font">&lt;/p&gt;</p>
+            <a class="btn btn-neon btn-neon-green mt-4 ms-3 px-lg-4 py-lg-2" href="#contact">Contáctame!</a>
+        </div>
+    </section>
+    
+    <!-- Portfolio -->
+
+    <section id="portfolio" class="portfolio my-5 py-2">
+        <div data-aos="fade-up" class="container">
+            <p class="coding-font">&lt;h2&gt;</p>            
+            <h2 class="ms-2"><span>M</span><span>i</span> <span>P</span><span>o</span><span>r</span><span>t</span><span>a</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span></h2>
+            <p class="coding-font">&lt;/h2&gt;</p>
+            <div class="row">
+                <div class="col-lg-9">
+                    <p class="coding-font">&lt;p&gt;</p>
+                    <p class="ms-3 lightened-text">
+                        Estos son mis proyectos más recientes. He trabajado junto a personas y equipos generando soluciones para sus
+                        empresas y emprendimientos.
+                    </p>
+                    <p class="coding-font">&lt;/p&gt;</p>
+                </div>
+                <div class="col-lg-3">
+                    <a class="btn btn-neon btn-neon-green mt-4 ms-3 px-lg-4 py-lg-2" href="https://github.com/liscanojac" target="_blank" rel="noopener noreferrer">Ver más</a>
+                </div>
+            </div>            
+        </div>
+        <div class="container-fluid my-2 g-0">
+            <p class="coding-font">&lt;section&gt;</p>
+            <div class="portfolio-grid my-2">
+                <a href="https://liscanojac.github.io/arrow/" target="_blank" rel="noopener noreferrer" class="overflow-hidden">
+                    <div class="portfolio-grid-1"></div>
+                </a>
+                <a href="https://github.com/liscanojac" target="_blank" rel="noopener noreferrer" class="overflow-hidden">
+                    <div class="portfolio-grid-2"></div>
+                </a>
+                <a href="https://liscanojac.github.io/KGB/" target="_blank" rel="noopener noreferrer" class="overflow-hidden">
+                    <div class="portfolio-grid-3"></div>
+                </a>
+                <a href="https://licdanielatrueba.netlify.app/" target="_blank" rel="noopener noreferrer" class="overflow-hidden">
+                    <div class="portfolio-grid-4"></div>
+                </a>
+                <a href="https://espaciodasein.netlify.app/" target="_blank" rel="noopener noreferrer" class="overflow-hidden">
+                    <div class="portfolio-grid-5"></div>
+                </a>
+            </div>
+            <p class="coding-font">&lt;/section&gt;</p>
+        </div>
+    </section>
+
+    <!-- About -->
+
+    <section id="about" name="about" class="about">
+        <p class="coding-font">&lt;section&gt;</p>
+        <div data-aos="fade-up" class="container">
+            <p class="coding-font">&lt;script&gt;</p>
+            <div class="ms-2">
+                <h2 class=" my-3">acercaDe<span class="parenthesis-parent"><span class="parenthesis">(</span> 
+                    <p class="glitch">
+                        juan
+                        <span >juan</span>
+                    </p> <span class="parenthesis">)</span></span>;</h2>
+                <div class="ms-3">
+                    <div class="d-flex about-flex">
+                        <a href="https://www.linkedin.com/in/juan-antonio-canelon-liscano-1b3a49218/" target="_blank" rel="noopener noreferrer" class="me-3 my-auto">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/liscanojac" target="_blank" rel="noopener noreferrer" class="me-3 my-auto">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://twitter.com/liscanojac" target="_blank" rel="noopener noreferrer" class="me-3 my-auto">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <p class="me-3 my-auto">Descarga acá</p>
+                        <a href="./resume/jcanelon-Yellow and Black-Resume.pdf" class="btn btn-neon btn-neon-pink d-flex my-2">
+                            <p class="my-auto me-2">cv</p>
+                            <i class="bi bi-download my-auto"></i>
+                        </a>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-12 col-lg-9">
+                            <p class="about-me">
+                                Desarrollador Web enfocado en soluciones creativas, optimización de procesos y obtención de resultados.
+                                Tengo
+                                experiencia en Latinoamérica y Australia. Actualmente en Buenos Aires.
+                            </p>
+                            <p class="experience">
+                                // 1200+ horas de experiencia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row about-grid">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h5 class="fw-bold">Habilidades<span class="fw-normal">/Herramientas</span></h5>
+                            <ul class="list-unstyled">
+                                <li>JavaScript</li>
+                                <li>Bootstrap 5</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 order-md-1">
+                            <h5 class="fw-bold">Idiomas</h5>
+                            <ul class="list-unstyled">
+                                <li class="language-level">//avanzado</li>
+                                <li><span class="languages-span">en-AU</span> Inglés</li>
+                                <li><span class="languages-span">es-ES</span> Español</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 order-md-2">
+                            <h5 class="d-md-block invisible d-none">Idiomas</h5>
+                            <ul class="list-unstyled">
+                                <li class="language-level">//intermedio</li>
+                                <li><span class="languages-span">pt-BR</span> Portugués</li>               
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 order-lg-3">
+                            <h5 class="fw-bold">Hobbies</h5>
+                            <ul class="list-unstyled">
+                                <li>Fotografía</li>
+                                <li>Yoga</li>                 
+                                <li>Química</li>
+                                <li>Videojuegos</li>         
+                            </ul>
+                        </div>
+                    </div>
+                </div>                               
+            </div>            
+            <p class="coding-font">&lt;/script&gt;</p>
+        </div>
+        <p class="coding-font">&lt;/section&gt;</p>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+        <p class="coding-font">&lt;section&gt;</p>
+        <div data-aos="fade-up" class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-4 offset-lg-1">
+                    <p class="coding-font">&lt;h2&gt;</p>
+                    <h2 class="ms-2"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>o</span>
+                    </h2>
+                    <p class="coding-font">&lt;/h2&gt;</p>
+                    <p class="coding-font">&lt;p&gt;</p>
+                    <p class="ms-3 lightened-text">
+                        Tienes algun proyecto o pregunta? No dudes en ponerte en contacto conmigo.
+                    </p>
+                    <p class="coding-font">&lt;/p&gt;</p>
+                    <form id="form" class="ms-2">
+                        <p class="coding-font">&lt;form&gt;</p>
+                        <div class="row my-3">
+                            <div class="col">
+                                <div class="form-neon">
+                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                                </div>                        
+                            </div>
+                            <div class="col">
+                                <div class="form-neon">
+                                    <input type="email" class="form-control" placeholder="Email" aria-label="Email" required>
+                                </div>                        
+                            </div>                            
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-neon">
+                                <input type="text" class="form-control" placeholder="Asunto" aria-label="Asunto" required>
+                            </div>                           
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-neon">
+                                <textarea id="text-area" class="form-control" placeholder="Mensaje" required></textarea>
+                            </div>                            
+                        </div>
+                        <div class="my-4 d-flex justify-content-end">
+                            <button class="btn btn-neon btn-neon-green px-5" type="submit">Enviar</button>
+                        </div>
+                        <p class="coding-font">&lt;/form&gt;</p>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1 g-0 py-5">
+                    <p class="coding-font ms-3">&lt;map&gt;</p>
+                    <div id="map"></div>
+                    <p class="coding-font ms-3">&lt;/map&gt;</p>
+                </div>
+            </div>          
+        </div>
+        <p class="coding-font">&lt;/section&gt;</p>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p class="coding-font">&lt;footer&gt;</p>
+        <div data-aos="fade-up" class="container">
+            <div class="row">
+                <div class="col-lg-2 col-3">
+                    <img src="./images/labLogo-removebg (1).png" alt="" class="img-fluid">           
+                </div>
+            </div>
+            <h4 class="my-3">// Ingredientes</h4>
+            <div class="row footer-ingredients">
+                <div class="col-lg-4 col-sm-6">
+                    <h6>&lt;/&gt;</h6>
+                    <ul class="list-unstyled">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap 5.0</li>
+                        <li>JS</li>
+                        <li>AOS</li>
+                    </ul>
+                </div>                
+                <div class="col-lg-4 col-sm-6">
+                    <h6>~</h6>
+                    <ul class="list-unstyled">
+                        <li>23 Archivos</li>
+                        <li>293.3kB</li>
+                        <li>+120 horas</li>
+                        <li>+21 mates</li>
+                        <li>+15m de tubos de neón</li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+        <p class="coding-font">&lt;/footer&gt;</p>
+    </footer>
+
+    <section class="bottom py-3">
+        <div class="container">
+            <div class="div text-center">
+                <p class="my-0">Gracias por visitar mi website!</p>
+                <p class="my-0">// Es un proyecto en progreso, se vienen mejoras.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjdRlYb6uvFGtGBIytK9cc0MnmaeMI080&map_ids=2e6a706befca9bd1&callback=initMap">
+    </script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

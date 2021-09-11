@@ -1,0 +1,431 @@
+
+/* Navbar */
+
+header {
+    font-family: 'Inconsolata', monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgb(10,10,10);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 6%, rgba(29,29,29,0.7791491596638656) 88%);
+    /* transition: all 0.25s ease; */
+}
+
+header a {
+    color: #fff;
+}
+
+header h5 span {
+    color: #FEAEC1;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #FEAEC1,
+        0 0 21px #FEAEC1,
+        0 0 42px var(--light-pink),
+        0 0 82px var(--light-pink),
+        0 0 92px var(--light-pink),
+        0 0 102px var(--light-pink),
+        0 0 151px var(--light-pink);   
+    transition: .4s ease;
+}
+
+header li span {
+    color: var(--primary-pink);
+}
+
+header li a:hover {
+    color: #fff;
+}
+
+header i {
+    color: var(--primary-pink);
+}
+
+header li a:hover span{
+    color: #FEAEC1;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #FEAEC1,
+        0 0 21px #FEAEC1,
+        0 0 42px var(--light-pink),
+        0 0 82px var(--light-pink),
+        0 0 92px var(--light-pink),
+        0 0 102px var(--light-pink),
+        0 0 151px var(--light-pink);   
+    transition: .4s ease;
+}
+
+header li a:hover i {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px var(--secondary-light-pink),
+        0 0 21px var(--secondary-light-pink),
+        0 0 42px var(--light-pink),
+        0 0 82px var(--light-pink),
+        0 0 92px var(--light-pink),
+        0 0 102px var(--light-pink),
+        0 0 151px var(--light-pink);
+        transition: .5s ease-out;
+}
+
+header #nav-buttons i {
+    cursor: pointer;
+    transition: .45 ease;
+}
+
+header #menu-list {
+    transition: .45s ease;
+}
+
+header .bi-x {
+    font-size: 1.35rem;
+}
+/* Hero Section */
+
+.hero h1 {
+    font-weight: 700;
+    /* font-size: 5rem; */
+}
+
+.hero .neon-hero {
+    /* text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px var(--primary-green),
+        0 0 82px var(--primary-green),
+        0 0 92px var(--primary-green),
+        0 0 102px var(--primary-green),
+        0 0 151px var(--primary-green); */
+    /* margin-left: 2rem; */
+    color: #0a0a0a;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* animation: flicker 2.5s infinite alternate; */
+}
+
+.neon-hero-flicker {
+    animation: flicker 2.5s infinite alternate;
+}
+
+.neon-turned-on {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px var(--primary-green),
+        0 0 42px var(--primary-green),
+        0 0 82px var(--primary-green),
+        0 0 92px var(--primary-green),
+        0 0 102px var(--primary-green);
+    color: #fff !important;
+    transition: text-shadow .6s ease,
+                color .6s ease;
+}
+
+
+
+.hero h4 {
+    color: var(--secondary-grey);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Portfolio */
+
+.portfolio h2 {
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+.portfolio h2 span:hover {
+    text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--primary-green),
+        0 0 80px var(--primary-green),
+        0 0 90px var(--primary-green),
+        0 0 100px var(--primary-green),
+        0 0 150px var(--primary-green);
+    color: #fff;
+    transition: .5s ease-out;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
+}
+
+.portfolio-grid a{
+    height: 30vh;
+    /* using vh I can keep the aspect ratio responsive */
+}
+
+.portfolio-grid a div {    
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.70);
+}
+
+.portfolio-grid-1 {
+    background-image: url(../images/arrow-portfolio.png);
+}
+.portfolio-grid-2 {
+    background-image: url(../images/prypiat-portfolio.png);
+}
+.portfolio-grid-3 {
+    background-image: url(../images/kgb-portfolio.png);
+}
+.portfolio-grid-4 {
+    background-image: url(../images/danielaTrueba-portfolio.png);
+}
+.portfolio-grid-5 {
+    background-image: url(../images/espacioDasein-portfolio.png);
+}
+
+.portfolio-grid a:hover div{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    transition: .5s;
+}
+
+/* About Section */
+
+.about h2 {
+    font-weight: 700;
+    letter-spacing: .05rem;
+    display: inline-block;
+}
+
+.about p {
+    font-family: 'Inconsolata', monospace;
+}
+
+.about h2 .parenthesis-parent {
+    color: var(--primary-pink);
+}
+
+.about h2 .parenthesis-parent:hover .parenthesis{
+    color: #FEAEC1;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #FEAEC1,
+        0 0 21px #FEAEC1,
+        0 0 42px var(--light-pink),
+        0 0 82px var(--light-pink),
+        0 0 92px var(--light-pink),
+        0 0 102px var(--light-pink),
+        0 0 151px var(--light-pink);   
+    transition: .4s ease;
+}
+
+.about h2 .glitch {
+    /* font-family  : 'Inconsolata', monospace; */
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    /* opacity: .01; */
+}
+
+.about h2 .glitch:hover {
+    animation: glitch 500ms linear,
+                move-sideways 600ms linear;    
+}
+
+
+.about h2 .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* color: var(--primary-grey); */
+    content: 'juan';
+    opacity: 0.8;
+    clip-path: polygon(0 36%, 100% 19%, 100% 46%, 0 73%);  
+}
+
+.about h2 .glitch:hover span {
+    animation: glitch-clip 400ms linear;
+}
+
+.about .about-flex .bi-github,
+.about .about-flex .bi-linkedin,
+.about .about-flex .bi-twitter {
+    font-size: 1.25rem;
+    color: var(--primary-pink);
+}
+
+.about .about-flex .bi-github:hover,
+.about .about-flex .bi-linkedin:hover,
+.about .about-flex .bi-twitter:hover {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px var(--secondary-light-pink),
+        0 0 21px var(--secondary-light-pink),
+        0 0 42px var(--light-pink),
+        0 0 82px var(--light-pink),
+        0 0 92px var(--light-pink),
+        0 0 102px var(--light-pink),
+        0 0 151px var(--light-pink);
+        transition: .5s ease-out;
+}
+
+.about .about-flex p {    
+    font-size: 1.25rem;
+    color: var(--secondary-grey);
+}
+
+.about .about-flex .btn-neon-pink p,
+.about .about-flex .btn-neon-pink i {
+    color: var(--primary-pink);
+}
+.about .about-flex .btn-neon-pink:hover p,
+.about .about-flex .btn-neon-pink:hover i {
+    color: var(--secondary-light-pink);
+    transition: .5 ease-out;
+}
+
+.about .about-me {
+    color: var(--secondary-pink);
+}
+
+.about .experience {
+    color: var(--secondary-grey);
+}
+
+.about .about-grid {
+    font-family: 'Inconsolata', monospace;
+}
+
+.about .about-grid li {
+    color: var(--secondary-grey);
+}
+
+/* Contact */
+
+.contact h2 {
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+.contact h2 span:hover {
+    text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--primary-green),
+        0 0 80px var(--primary-green),
+        0 0 90px var(--primary-green),
+        0 0 100px var(--primary-green),
+        0 0 150px var(--primary-green);
+    color: #fff;
+    transition: .5s ease-out;
+}
+
+.form-neon {
+    position: relative;
+}
+
+.contact .form-control {
+    background: var(--form-grey);
+    border: 0;
+    border-bottom: .1rem solid var(--primary-green);
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    position: relative;
+    caret-color: var(--primary-pink);
+}
+
+/* input:focus {
+    outline: none;
+} */
+
+.form-control:focus {
+    /* border-color: inherit; */
+    box-shadow: none;
+    
+}
+
+.form-neon::after {
+    content: '';
+    position: absolute;
+    /* display: block; */
+    width: 0%;
+    height: .15rem;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 .2em #fff,
+                0 0 .4em #fff,
+                0 0 2em var(--primary-green),
+                0 0 0.8em var(--primary-green),
+                0 0 2.8em var(--primary-green),
+                inset 0 0 1.3em var(--primary-green);
+    /* transition: 300ms; */
+    transition: all 0.45s;
+    /* animation: flicker-neon .5s infinite alternate; */
+}
+
+.form-neon-js::after {
+    width: 100%;
+    left: 0;
+}
+
+.form-neon-flicker::after {
+    animation: flicker-neon .5s infinite alternate;
+}
+
+.contact #map {
+    height: 65vh;
+    background-image: url(../images/mapBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Footer */
+
+footer {
+    font-family: 'Inconsolata', monospace;
+}
+
+footer h4 {
+    color: var(--secondary-grey);
+    opacity: .8;
+}
+
+footer .footer-ingredients {
+    color: var(--primary-pink);
+}
+
+footer .footer-ingredients h6 {
+    font-weight: 700;
+}
+
+footer .footer-ingredients h6:first-of-type {
+    letter-spacing: .12em;
+}
+
+/* Bottom Section */
+
+.bottom {
+    font-family: 'Inconsolata', monospace;
+    background: rgb(10,10,10);
+    background: linear-gradient(0deg, rgba(10,10,10,1) 6%, rgba(29,29,29,1) 88%);
+}
+
+.bottom p:last-of-type {
+    color: var(--secondary-grey);
+    opacity: 0.8;
+}
+
+

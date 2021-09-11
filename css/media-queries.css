@@ -1,0 +1,72 @@
+
+@media (min-width: 760px) {
+
+    /* Utilities */
+
+    .btn-neon-green {
+        border-width: .15rem;
+    }
+
+    /* Hero Section */
+
+    .hero h1 {
+        font-size: 4.3rem;
+    }
+
+    .hero h4 {
+        font-size: 1.6rem;
+    }
+
+    /* Portfolio Section */
+
+    .portfolio h2 {
+        font-size: 1.9rem;
+    }
+
+    /* About Section */
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Contact Section */
+
+    .contact h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* Hero Section */
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hero h4 {
+        font-size: 2.3rem;
+    }
+
+    /* Portfolio Section */
+
+    .portfolio h2 {
+        font-size: 2.6rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* About Section */
+
+    .about h2 {
+        font-size: 3rem;
+    }
+
+    /* Contact Section */
+
+    .contact h2 {
+        font-size: 2.6rem;
+    }
+}

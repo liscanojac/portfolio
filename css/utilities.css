@@ -1,0 +1,250 @@
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&display=swap');
+
+
+:root {
+    --primary-green: #09FDF4;
+    --secondary-green: #6BD6F1;
+    --primary-purple: #6600FF;
+    --dark-purple: #13042B;
+    --secondary-purple: #5C53A2;
+    --primary-grey: #1D1D1D;
+    --secondary-grey: #797979;
+    --form-grey: #1F2223;
+    --primary-pink: #FD2155;
+    --secondary-pink: #F24B4B;
+    --light-pink: #FD5D83;
+    --secondary-light-pink: #FEAEC1;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: var(--primary-grey);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 3rem;
+}
+
+.coding-font {
+    font-family: 'Inconsolata', monospace;
+    color: var(--secondary-grey);
+    font-size: .85rem;
+    margin-bottom: 0;
+    font-weight: 200;
+}
+
+.lightened-text {
+    font-weight: 200;
+}
+
+.btn-neon {
+    border-radius: 8px;
+}
+
+.btn-neon-green {
+    color: var(--primary-green);
+    border: .1rem solid var(--primary-green);    
+    font-weight: 400;
+}
+.btn-neon-pink {
+    color: var(--primary-pink);
+    border: .1rem solid var(--primary-pink);   
+    
+}
+
+.btn-neon:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: .5s ease-out;
+}
+
+.btn-neon-green:hover {    
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px var(--primary-green),
+        0 0 82px var(--primary-green),
+        0 0 92px var(--primary-green),
+        0 0 102px var(--primary-green),
+        0 0 151px var(--primary-green);    
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem var(--primary-green),
+                0 0 0.8rem var(--primary-green),
+                0 0 2.8rem var(--primary-green),
+                inset 0 0 1.3rem var(--primary-green);    
+}
+.btn-neon-pink:hover {    
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px var(--secondary-light-pink),
+        0 0 21px var(--secondary-light-pink),
+        0 0 42px var(--light-pink),
+        0 0 82px var(--light-pink),
+        0 0 92px var(--light-pink),
+        0 0 102px var(--light-pink),
+        0 0 151px var(--light-pink);    
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem var(--light-pink),
+                0 0 0.8rem var(--light-pink),
+                0 0 2.8rem var(--light-pink),
+                inset 0 0 1.3rem var(--light-pink);    
+}
+
+/* Animations */
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 73%, 77%, 100% {
+
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--primary-green),
+        0 0 80px var(--primary-green),
+        0 0 90px var(--primary-green),
+        0 0 100px var(--primary-green),
+        0 0 150px var(--primary-green);
+        color: #fff;
+    
+    }
+    
+    20%, 24%, 55%, 75% {        
+        text-shadow: none;
+        color: var(--primary-grey);
+    }    
+}
+
+@keyframes flicker-neon {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 73%, 77%, 100% {
+
+        box-shadow:
+        0 0 .2em #fff,
+        0 0 .4em #fff,
+        /* 0 0 .8em #fff, */
+        0 0 .8em var(--primary-green),
+        0 0 1em var(--primary-green),
+        0 0 2em var(--primary-green),
+        0 0 2.8em var(--primary-green);
+        /* 0 0 150px var(--primary-green); */
+        /* color: #fff; */
+    
+    }
+    
+    20%, 24%, 55%, 75% {        
+        box-shadow: none;
+        /* background-color: var(--primary-grey); */
+    }    
+}
+
+
+@keyframes glitch {
+    0% {
+        text-shadow: 
+            0.05em 0 0 var(--secondary-pink),
+            -0.05em -0.025em 0 var(--primary-green),
+            -0.025em 0.05em 0 var(--secondary-purple);
+    }
+    14% {
+        text-shadow: 
+            0.05em 0 0 var(--secondary-pink),
+            -0.05em -0.025em 0 var(--primary-green),
+            -0.025em 0.05em 0 var(--secondary-purple);
+    }
+    15% {
+        text-shadow: 
+            -0.05em -0.15em 0 var(--secondary-pink),
+            0.025em 0.02em 0 var(--primary-green),
+            -0.05em -0.05em 0 var(--secondary-purple);
+    }
+    49% {
+        text-shadow: 
+            -0.05em -0.025em 0 var(--secondary-pink),
+            0.025em 0.25em 0 var(--primary-green),
+            -0.05em -0.05em 0 var(--secondary-purple);
+    }
+    50% {
+        text-shadow: 
+            0.025em 0.05em 0 var(--secondary-pink),
+            0.05em 0em 0 var(--primary-green),
+            0em -0.05em 0 var(--secondary-purple);
+    }
+    99% {
+        text-shadow: 
+            0.025em 0.05em 0 var(--secondary-pink),
+            0.05em 0em 0 var(--primary-green),
+            0em -0.05em 0 var(--secondary-purple);
+    }
+    100% {
+        text-shadow: 
+            0.05em 0 0 var(--secondary-pink),
+            -0.025em -0.05em 0 var(--primary-green),
+            0.025em 0.05em 0 rgba(0,0,255,.75);
+    }
+}
+
+@keyframes glitch-clip {
+    0% {
+        
+        transform: translateY(0.05em);
+        color: var(--primary-green);
+    }
+    50% {
+        color: var(--primary-green);
+        transform: translateY(0.05em);    
+        transform: skewY(5deg);    
+    }
+    75% {
+        color: var(--primary-grey);
+        transform: translateY(-0.06em);
+        transform: scale(1.1);
+
+    }
+    100% {
+        color: var(--primary-green);
+        transform: translateY(0);
+    }
+}
+@keyframes move-sideways {
+    0% {
+        
+        transform: translateX(0.05em);
+        color: var(--primary-green);
+    }
+    50% {
+        transform: translateX(-0.05em);    
+        transform: skewY(.8deg);
+        opacity: .75;
+        color: #fff;
+        /* font-family: 'Inconsolata', monospace; */
+    }
+    75% {
+        transform: translateX(0.06em);
+        opacity: .5;
+        font-family: monospace;
+        font-size: 85%;
+    }
+    100% {
+        transform: translateX(0);
+        color: var(--secondary-light-pink);
+    }
+}
